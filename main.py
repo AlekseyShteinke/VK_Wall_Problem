@@ -13,7 +13,7 @@ def main():
     vk = vk_session.get_api()
 
 
-    #delete posts, exept first 10
+    #delete posts, except first 10
     posts = vk.wall.get(count=100, offset=10)['items']
     while posts:
         for post in posts:
